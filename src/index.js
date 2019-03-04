@@ -1,5 +1,4 @@
-const uuidv1 = require('uuid/v1');
-
+import uuidv1 from 'uuid/v4';
 const getCookie = name => document.cookie.split('; ').reduce((r, v) => {
   const parts = v.split('=');
   return parts[0] === name ? decodeURIComponent(parts[1]) : r;
